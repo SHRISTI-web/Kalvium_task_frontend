@@ -4,7 +4,6 @@ const MarkAttendance = ({ selectedClass }) => {
   const [attendanceMarked, setAttendanceMarked] = useState(false);
 
   const handleMarkAttendance = () => {
-    // Implement attendance marking logic here
     setAttendanceMarked(true);
   };
 
