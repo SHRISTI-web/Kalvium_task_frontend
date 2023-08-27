@@ -4,6 +4,7 @@
 /* Reset some default browser styles */
 /* Reset some default browser styles */
 /* Reset some default browser styles */
+/* Reset some default browser styles */
 body, h1, h2, p, button {
   margin: 0;
   padding: 0;
@@ -70,4 +71,26 @@ select {
 .confirmation {
   color: #27ae60;
   margin-top: 10px;
+}
+
+/* List of students */
+.student-list {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.student-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.student-button:hover {
+  background-color: #2980b9;
 }

@@ -8,9 +8,14 @@ const ClassSelectionPage = () => {
   const [selectedStudent, setSelectedStudent] = useState(null);
 
   const studentsByClass = {
-    classA: ['Student A1', 'Student A2', 'Student A3'],
+    classA: ['Student A1', 'Student A2', 'Student A3','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4','Student A4'],
     classB: ['Student B1', 'Student B2', 'Student B3'],
     classC: ['Student C1', 'Student C2', 'Student C3'],
+    classD: ['Student C1', 'Student C2', 'Student C3'],
+    classE: ['Student C1', 'Student C2', 'Student C3'],
+    classF: ['Student C1', 'Student C2', 'Student C3'],
+    classG: ['Student C1', 'Student C2', 'Student C3'],
+    classH: ['Student C1', 'Student C2', 'Student C3'],
   };
 
   const handleSelectClass = (classId) => {
@@ -44,6 +49,11 @@ const ClassSelectionPage = () => {
           <button onClick={() => handleSelectClass('classA')}>Class A</button>
           <button onClick={() => handleSelectClass('classB')}>Class B</button>
           <button onClick={() => handleSelectClass('classC')}>Class C</button>
+          <button onClick={() => handleSelectClass('classD')}>Class D</button>
+          <button onClick={() => handleSelectClass('classE')}>Class E</button>
+          <button onClick={() => handleSelectClass('classF')}>Class F</button>
+          <button onClick={() => handleSelectClass('classG')}>Class G</button>
+          <button onClick={() => handleSelectClass('classH')}>Class H</button>
         </div>
       )}
     </div>
