@@ -27,6 +27,7 @@ body {
 
 /* Page container */
 /* Page container */
+/* Page container */
 .page-container {
   background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
   padding: 20px;
@@ -35,6 +36,12 @@ body {
   text-align: center;
   margin-top: 20px; /* Add margin to the top */
 }
+
+/* Add margin to the bottom of the text elements */
+h1, h2, p {
+  margin-bottom: 10px;
+}
+
 
 
 /* Buttons */

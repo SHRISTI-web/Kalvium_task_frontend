@@ -14,7 +14,7 @@ const MarkAttendancePage = ({ selectedClass, selectedStudent }) => {
       <h1>Attendance System</h1>
       <h2>Mark Attendance for {selectedStudent} in {selectedClass}</h2>
       {attendanceMarked ? (
-        <p>Attendance for {selectedStudent} in {selectedClass} has been marked.</p>
+        <h3>Attendance for {selectedStudent} in {selectedClass} has been marked.</h3>
       ) : (
         <button onClick={handleMarkAttendance}>Mark Attendance</button>
       )}
