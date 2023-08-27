@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import '../App.css';
 
-const MarkAttendancePage = ({ selectedClass }) => {
+const MarkAttendancePage = ({ selectedClass, selectedStudent }) => {
   const [attendanceMarked, setAttendanceMarked] = useState(false);
 
   const handleMarkAttendance = () => {
@@ -11,9 +12,9 @@ const MarkAttendancePage = ({ selectedClass }) => {
   return (
     <div>
       <h1>Attendance System</h1>
-      <h2>Mark Attendance for {selectedClass}</h2>
+      <h2>Mark Attendance for {selectedStudent} in {selectedClass}</h2>
       {attendanceMarked ? (
-        <p>Your attendance has been marked.</p>
+        <p>Attendance for {selectedStudent} in {selectedClass} has been marked.</p>
       ) : (
         <button onClick={handleMarkAttendance}>Mark Attendance</button>
       )}

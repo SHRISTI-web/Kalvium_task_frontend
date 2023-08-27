@@ -1,42 +1,39 @@
-/* App.css */
-
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+/* Reset some default browser styles */
+/* Reset some default browser styles */
+body, h1, h2, p, button {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-color: #f5f5f5;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.login-page, .class-selection-page, .attendance-page {
-  background-color: #fff;
+/* Page container */
+.page-container {
+  background-color: #ffffff; /* Light gray background */
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   text-align: center;
 }
 
-.login-page h2, .class-selection-page h2, .attendance-page h2 {
-  margin-top: 0;
-}
-
-input, select, button {
-  margin: 10px 0;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
+/* Buttons */
 button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
   background-color: #007bff;
-  color: #fff;
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -45,6 +42,18 @@ button:hover {
   background-color: #0056b3;
 }
 
-p {
-  font-size: 16px;
+/* Select dropdown */
+select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Confirmation message */
+.confirmation {
+  color: #008000;
+  margin-top: 10px;
 }
